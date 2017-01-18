@@ -21,7 +21,7 @@ else
 fi
 
 curl -sL https://repos.influxdata.com/influxdb.key | apt-key add -source /etc/os-release
-test $VERSION_ID = "8" && echo "deb https://repos.influxdata.com/debian jessie stable" | tee -a /etc/apt/sources.list
+echo "deb https://repos.influxdata.com/debian jessie stable" | tee -a /etc/apt/sources.list
 
 echo ### Updating package repository ###
 sudo apt-get update
