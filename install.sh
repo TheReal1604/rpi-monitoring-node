@@ -13,8 +13,10 @@ curl https://bintray.com/user/downloadSubjectPublicKey?username=bintray | sudo a
 
 if [ "$rpiversion" == armv6l ]
 then 
+  echo ## Raspberry Pi 1 detected.. ##
   echo "deb https://dl.bintray.com/fg2it/deb-rpi-1b jessie main" | sudo tee -a /etc/apt/sources.list.d/grafana.list
 else
+  echo ## Raspberry Pi 2 or 3 detected.. ##
   echo "deb https://dl.bintray.com/fg2it/deb jessie main" | sudo tee -a /etc/apt/sources.list.d/grafana.list
 fi
 
