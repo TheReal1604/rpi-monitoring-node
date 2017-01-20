@@ -1,6 +1,6 @@
 # rpi-monitoring-node
 
-A repo to setup your raspberry pi to automate the installation of telegraf, influxdb and grafana with a predefined dashboard.
+A repo to automate the installation of telegraf, influxdb and grafana on your raspberry pi with a predefined dashboard.
 
 Its based on:
 
