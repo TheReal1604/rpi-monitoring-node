@@ -41,10 +41,19 @@ systemctl enable grafana-server
 systemctl enable telegraf
 systemctl enable influxdb
 
+echo "## Waiting for some seconds... ##"
+sleep 20s
+
 echo "## Starting all services the first time ##"
+echo "## Starting influxdb ##"
 systemctl start influxdb
+sleep 5s
+echo "## Starting grafana-server ##"
 systemctl start grafana-server
+sleep 5s
+echo "## Starting telegraf ##"
 systemctl start telegraf
+sleep 5s
 
 echo "## Enabling Grafana Plugins ##"
 grafana-cli plugins install grafana-clock-panel
@@ -56,12 +65,12 @@ systemctl restart grafana-server
 #grafana-cli admin reset-admin-password $pw
 
 echo "## Enabling InfluxDB datasource in Grafana.. ##"
-curl 'http://admin:$pw@127.0.0.1:3000/api/datasources' -X POST -H 'Content-Type: application/json;charset=UTF-8' --data-binary '{"name":"influx","type":"influxdb","url":"http://localhost:8086","access":"proxy","isDefault":true,"database":"telegraf","user":"","password":""}'
+curl 'http://admin:admin@127.0.0.1:3000/api/datasources' -X POST -H 'Content-Type: application/json;charset=UTF-8' --data-binary '{"name":"influx","type":"influxdb","url":"http://localhost:8086","access":"proxy","isDefault":true,"database":"telegraf","user":"","password":""}'
 echo "## Adding your monitoring Dashboard ##"
-curl -XPOST -i http://admin:$pw@localhost:3000/api/dashboards/db --data-binary @./dashboards/dashboard.json -H "Content-Type: application/json"
+curl -XPOST -i http://admin:admin@localhost:3000/api/dashboards/db --data-binary @./dashboards/dashboard.json -H "Content-Type: application/json"
 
-echo "###############################"
-echo "## Grafana Username: admin   ##"
-echo "## Password: admin           ##"
-echo "## URL: http://$ipadress:3000##"
-echo "###############################"
+echo "####################################"
+echo "## Grafana Username: admin        ##"
+echo "## Password: admin                ##"
+echo "## URL: http://$ipadress:3000  ##"
+echo "####################################"
