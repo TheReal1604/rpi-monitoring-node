@@ -1,6 +1,6 @@
 # rpi-monitoring-node
 
-A repo to setup your raspberry pi to monitor your internet connection.
+A repo to setup your raspberry pi to automate the installation of telegraf, influxdb and grafana with a predefined dashboard.
 
 Its based on:
 
@@ -38,3 +38,4 @@ If you want to add some telegraf plugins, edit the telegraf conf:
 * Implement external IP check
 
 # Screenshots
+<img src=https://cdn.cloudreboot.de/github/rpi-monitoring-node.png>
