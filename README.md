@@ -35,5 +35,6 @@ If you want to add some telegraf plugins, edit the telegraf conf:
 # ToDos
 * Implement that the password from grafana admin is changed (grafana-cli is not working atm..)
 * Implement better dashboard
+* Implement external IP check
 
 # Screenshots
