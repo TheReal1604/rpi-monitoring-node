@@ -44,7 +44,7 @@ systemctl enable influxdb
 echo "## Starting all services the first time ##"
 systemctl start influxdb
 systemctl start grafana-server
-systemctl start influxdb
+systemctl start telegraf
 
 echo "## Enabling Grafana Plugins ##"
 grafana-cli plugins install grafana-clock-panel
