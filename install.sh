@@ -59,7 +59,7 @@ echo "## Enabling Grafana Plugins ##"
 grafana-cli plugins install grafana-clock-panel
 grafana-cli plugins install grafana-piechart-panel
 systemctl restart grafana-server
-
+sleep 10s
 #echo "## Resetting Passwords..##"
 #pw=$(pwgen -y 8 1)
 #grafana-cli admin reset-admin-password $pw
