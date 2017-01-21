@@ -1,5 +1,4 @@
 #!/bin/bash
-# This is an install script for your rpi, its not tested yet!
 
 rpiversion=$(uname -m)
 ipadress=$(ip addr show | grep -E '^\s*inet' | grep -m1 global | awk '{ print $2 }' | sed 's|/.*||')
