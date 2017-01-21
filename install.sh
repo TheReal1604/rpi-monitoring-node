@@ -52,6 +52,7 @@ echo "## Starting grafana-server ##"
 systemctl start grafana-server
 sleep 5s
 echo "## Starting telegraf ##"
+systemctl stop telegraf
 systemctl start telegraf
 sleep 5s
 
