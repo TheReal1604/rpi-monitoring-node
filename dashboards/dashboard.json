@@ -58,7 +58,7 @@
       "height": 260,
       "panels": [
         {
-          "content": "<div align=center><img src=https://upload.wikimedia.org/wikipedia/en/thumb/c/cb/Raspberry_Pi_Logo.svg/810px-Raspberry_Pi_Logo.svg.png height=200><img src=https://openclipart.org/download/211895/category_feature_online.svg height=100></div>",
+          "content": "<div align=center><img src=https://upload.wikimedia.org/wikipedia/en/thumb/c/cb/Raspberry_Pi_Logo.svg/810px-Raspberry_Pi_Logo.svg.png height=200></div>",
           "id": 1,
           "links": [],
           "mode": "html",
