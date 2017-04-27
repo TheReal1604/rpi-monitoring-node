@@ -8,7 +8,7 @@ https://github.com/influxdata/influxdb
 
 https://github.com/influxdata/telegraf
 
-<img src="https://encrypted.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwjgwt3Y68TTAhWHzxQKHQtuBA4QjRwIBw&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FFile%3AInfluxdb_logo.svg&psig=AFQjCNFhFlb9s5OL29o2_Xo8Sh3SP1wpzQ&ust=1493389535190788" height="200">
+<img src="https://upload.wikimedia.org/wikipedia/commons/c/c6/Influxdb_logo.svg" height="200">
 
 https://github.com/grafana/grafana
 
