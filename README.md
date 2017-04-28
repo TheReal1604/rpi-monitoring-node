@@ -37,5 +37,9 @@ If you want to add some telegraf plugins, edit the telegraf conf:
 * Implement better dashboard
 * Implement external IP check
 
+# Contribution
+* Feel free to open a pull request if you want to contribute
+* You even can help if you make an issue with an additional idea for a necessary check
+
 # Screenshots
 <img src=https://cdn.cloudreboot.de/github/rpi-monitoring-node.png>
