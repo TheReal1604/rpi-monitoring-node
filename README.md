@@ -42,4 +42,4 @@ If you want to add some telegraf plugins, edit the telegraf conf:
 * You even can help if you make an issue with an additional idea for a necessary check
 
 # Screenshots
-<img src=https://cdn.cloudreboot.de/github/rpi-monitoring-node.png>
+Should be added.
